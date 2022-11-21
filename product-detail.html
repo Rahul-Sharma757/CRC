@@ -670,7 +670,7 @@
 				<div class="container-fluid">
 					<div class="repair-form">
 						<div class="row">
-							<div class="col-lg-10 offset-lg-1 col-xl-6 offset-xl-3">
+							<div class="col-lg-10 offset-lg-1 col-xl-7 offset-xl-3">
 								<h2>Search results for <u>F5A1234400454</u></h2>
 								<div class="card border-0 my-4">
 									<div class="card-header bg-transparent py-4">
@@ -795,11 +795,15 @@
 
 									</div>
 								</div>
-								<div class="mb-4">
-									<a href="start-repair.html" class="btn btn-primary lg-btn rounded-pill">Start
+								<div class="mb-4 p-2 d-md-flex justify-content-md-center">
+									<a href="start-repair.html" class="btn btn-primary lg-btn rounded-pill mb-3 me-sm-3">Start
 										Repair</a>
-									<a href="" class="btn btn-outline-primary lg-btn rounded-pill"
+									<a href="replacement.html" class="btn btn-primary lg-btn rounded-pill me-sm-3 mb-3 mt-sm-0">Start
+											Replacement</a>
+									<a href="" class="btn btn-outline-primary lg-btn rounded-pill me-sm-3 mb-3 mt-sm-0"
 										data-bs-toggle="modal" data-bs-target="#stolen-pop">Report lost/Stolen</a>
+									<a href="" class="btn btn-outline-primary lg-btn rounded-pill me-sm-3 mb-3 mt-sm-0"
+										data-bs-toggle="modal" data-bs-target="#biod-warrenty">Void Warranty</a>
 								</div>
 								<div class="d-flex justify-content-between align-items-center mb-4">
 									<h2 class="mb-0">Previous Repairs</h2>
@@ -925,6 +929,40 @@
 			</div>
 		</div>
 	</div>
+	<div class="modal fade" id="biod-warrenty" data-backdrop="static" data-keyboard="false"
+	aria-labelledby="staticBackdropLabel" style="display: none;" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2 class="modal-title" id="staticBackdropLabel">Void Warranty</h2>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span
+						aria-hidden="true"></span></button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="ms-4">
+						<div class="form-check form-check-inline ps-0">
+							<input id="lost" required name="checkbox" type="checkbox" class="form-check-input">
+							<label for="lost">Void Warranty</label>
+						</div>
+						
+					</div>
+					<div class="mb-4">
+
+					</div>
+					<div class="form-group mb-3">
+						<label>Notes</label>
+						<textarea class="form-control" name="description" id="description"></textarea>
+					</div>
+				
+					<!--<button type="submit" class="btn btn-primary mt-4">Submit</button>-->
+					<a href="product-report-stolen.html" class="btn btn-primary mt-4">Save</a>
+					<span id="message-lost" class="d-none">Reported Sucessfully</span>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
 	<div class="modal fade" id="verifies" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
